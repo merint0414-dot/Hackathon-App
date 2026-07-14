@@ -4,13 +4,14 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import AddHackathon from './components/AddHackathon'
+import ViewHackathon from './components/ViewHackathon'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <AddHackathon/>
+      <ViewHackathon/>
     </>
   )
 }
