@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const AddHackathon = () => {
   const [input, changeInput] = useState({
@@ -60,7 +61,7 @@ const AddHackathon = () => {
 
     return (
         <div>
-
+            <NavigationBar/>
             <div className="container mt-4">
 
                 <div className="card shadow">
