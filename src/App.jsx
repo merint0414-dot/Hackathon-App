@@ -5,13 +5,19 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import AddHackathon from './components/AddHackathon'
 import ViewHackathon from './components/ViewHackathon'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <ViewHackathon/>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<AddHackathon/>}/>
+        <Route path='/view' element={<ViewHackathon/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
